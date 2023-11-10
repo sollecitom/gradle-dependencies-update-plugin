@@ -1,4 +1,4 @@
-name: Pre Merge Checks
+name: Build Checks
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
       - name: Cache Gradle Caches
         uses: gradle/gradle-build-action@v2
       - name: Run Gradle tasks
-        run: ./gradlew preMerge --continue
+        run: ./gradlew build --continue
 
         # We do a run of the new task `templateExample` created by the plugin
       - name: Run the plugin
