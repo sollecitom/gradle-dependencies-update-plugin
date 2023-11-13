@@ -22,6 +22,6 @@ plugins {
     `gradle-enterprise`
 }
 
-rootProject.name = ("com.ncorti.kotlin.gradle.template")
+rootProject.name = ("org.sollecitom.kotlin.gradle.versions")
 
 include(":plugin")

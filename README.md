@@ -5,7 +5,7 @@
 Once cloned, remember to update:
 
 - [gradle.properties](plugin-build/gradle.properties)
-- Plugin Usages (search for com.ncorti.kotlin.gradle.template in the repo and replace it with your ID).
+- Plugin Usages (search for org.sollecitom.kotlin.gradle.versions in the repo and replace it with your ID).
 
 ## Composite Build 📦
 

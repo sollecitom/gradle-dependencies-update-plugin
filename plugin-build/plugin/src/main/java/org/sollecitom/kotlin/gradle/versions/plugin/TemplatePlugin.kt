@@ -1,4 +1,4 @@
-package com.ncorti.kotlin.gradle.template.plugin
+package org.sollecitom.kotlin.gradle.versions.plugin
 
 import org.gradle.api.Plugin
 import org.gradle.api.Project
