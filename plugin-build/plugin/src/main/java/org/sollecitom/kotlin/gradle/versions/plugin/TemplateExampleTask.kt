@@ -24,6 +24,18 @@ abstract class TemplateExampleTask : DefaultTask() {
     abstract val checkConstraints: Property<Boolean>
 
     @get:Input
+    @get:Option(option = "checkBuildEnvironmentConstraints", description = "A flag to check environment constraints. Default is false.")
+    @get:Optional
+    abstract val checkBuildEnvironmentConstraints: Property<Boolean>
+
+    @get:Input
+    @get:Option(option = "checkForGradleUpdate", description = "A flag to check whether a new version of Gradle is available. Default is true.")
+    @get:Optional
+    abstract val checkForGradleUpdate: Property<Boolean>
+
+
+
+    @get:Input
     @get:Option(option = "message", description = "A message to be printed in the output file")
     abstract val message: Property<String>
 
