@@ -15,10 +15,15 @@ The included build is inside the [plugin-build](plugin-build) folder.
 
 If you need to invoke a task inside the included build with:
 
-```
+```shell
 ./gradlew -p plugin-build <task-name>
 ```
 
+To build everything (until a better solution is found):
+
+```shell
+./gradlew build && ./gradlew -p plugin-build build && ./gradlew -p example build
+```
 
 ### Dependency substitution
 
@@ -37,5 +42,6 @@ Please note that you need to configure two secrets: `GRADLE_PUBLISH_KEY` and `GR
 This template is using [**GitHub Actions**](https://github.com/cortinico/kotlin-android-template/actions) as CI. You don't need to set up any external service, and you should have a running CI once you start using this template.
 
 There are currently the following workflows available:
+
 - [Validate Gradle Wrapper](.github/workflows/gradle-wrapper-validation.yml) - Will check that the Gradle wrapper has a valid checksum
 - [Publish to Plugin Portal](.github/workflows/publish-plugin.yaml) - Will run the `publishPlugin` task when pushing a new tag.

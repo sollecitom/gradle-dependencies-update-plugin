@@ -12,6 +12,16 @@ abstract class TemplateExtension @Inject constructor(project: Project) {
 
     private val objects = project.objects
 
+//    checkConstraints = true
+//    checkBuildEnvironmentConstraints = false
+//    checkForGradleUpdate = true
+//    outputFormatter = "json,html"
+//    outputDir = "build/dependencyUpdates"
+//    reportfileName = "report"
+
+    val checkConstraints: Property<Boolean> = objects.property(Boolean::class.java).convention(true)
+
+
     // Example of a property that is mandatory. The task will
     // fail if this property is not set as is annotated with @Optional.
     val message: Property<String> = objects.property(String::class.java)

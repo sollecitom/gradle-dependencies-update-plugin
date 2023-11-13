@@ -19,6 +19,11 @@ abstract class TemplateExampleTask : DefaultTask() {
     }
 
     @get:Input
+    @get:Option(option = "checkConstraints", description = "A flag to enforce version constraints checks. Default is true.")
+    @get:Optional
+    abstract val checkConstraints: Property<Boolean>
+
+    @get:Input
     @get:Option(option = "message", description = "A message to be printed in the output file")
     abstract val message: Property<String>
 

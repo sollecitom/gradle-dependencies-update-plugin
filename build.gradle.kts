@@ -6,7 +6,6 @@ plugins {
 }
 
 subprojects {
-
 }
 
 tasks.withType<DependencyUpdatesTask> {

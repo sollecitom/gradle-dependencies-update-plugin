@@ -7,6 +7,7 @@ const val EXTENSION_NAME = "templateExampleConfig"
 const val TASK_NAME = "templateExample"
 
 abstract class TemplatePlugin : Plugin<Project> {
+
     override fun apply(project: Project) {
         // Add the 'template' extension object
         val extension = project.extensions.create(EXTENSION_NAME, TemplateExtension::class.java, project)
